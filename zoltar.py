@@ -1,5 +1,5 @@
 import time
-
+from pyfiglet import Figlet
 
 def start():
     coin = input("INSERT COIN: Y/N  ").lower()
@@ -10,6 +10,9 @@ def start():
         time.sleep(2)
         print("The future is now yours to fear.")
         time.sleep(2)
+        font = Figlet(font="epic")
+        print(font.renderText("ZOLTAR"))
+
     else:
         print("Mysteries remain locked to those who refuse the price...")
         time.sleep(2)
